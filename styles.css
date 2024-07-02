@@ -1,0 +1,171 @@
+body {
+  background-color: rgb(234, 235, 233);
+  font-family: Verdana, Geneva;
+  font-size: 16px;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+}
+
+#container-head {
+  grid-area: 1 / 1 /4 / -1;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+}
+
+#logo-nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(234, 235, 233);
+  width: 100%;
+}
+
+#form-info {
+    margin-top: 50px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin: 0 100px 0 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h3,
+form {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+#form-info {
+  margin-bottom: 30px;
+}
+
+#submit {
+  background-color: orange;
+  border: none;
+  padding: 2px 10px;
+  font-weight: 800;
+}
+
+#features-container {
+  align-items: center;
+  justify-content: center;
+  grid-area: 4 / 5 /8 / 12;
+}
+
+h2 {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+p {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.grid {
+  margin-bottom: 40px;
+}
+
+#how-it-works-container {
+  align-items: center;
+  justify-content: center;
+  grid-area: 8 / 6 /12 / 12;
+  margin-bottom: 40px;
+}
+
+#prices-container {
+  grid-area: 12 / 4 /16 / 13;
+}
+
+#prices {
+  display: flex;
+  margin-top: 30px;
+}
+
+.product {
+  border: 1px solid;
+  width: 380px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.level {
+  background-color: rgba(128, 128, 128, 0.24);
+  width: 100%;
+  line-height: 50px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+ol > li {
+  line-height: 25px;
+  font-size: 14px;
+  margin-right: auto;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  background-color: orange;
+  margin: 20px;
+}
+
+#footer {
+  background-color: rgba(128, 128, 128, 0.24);
+  grid-area: 16 / 4 /-1/ 13;
+  margin-top: 25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+footer > ul > li > a {
+  margin: -30px;
+}
+
+span {
+  margin-right: 60px;
+  font-size: 12px;
+}
+
+@media (max-width: 400px) {
+  #logo-nav {
+    display: block;
+  }
+}
